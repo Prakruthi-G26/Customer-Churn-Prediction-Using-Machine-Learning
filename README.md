@@ -63,12 +63,14 @@ This system helps businesses:
 
 ### 📁 Project Structure
 
+```
 ├── app.py # Streamlit dashboard
 ├── model_churn.pkl # Trained ML model
 ├── label_encoders.pkl # Feature encoders
 ├── target_encoder.pkl # Target label encoder
 ├── Telco-Customer-Churn.csv # Sample dataset
 └── README.md
+```
 
 ---
 
@@ -77,6 +79,7 @@ This system helps businesses:
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+```
 
 ---
 
@@ -87,4 +90,3 @@ streamlit run app.py
 - Advanced LLM-based retention suggestions
 - Role-based login dashboard
 - Power BI style executive view
-```
