@@ -4,6 +4,8 @@ import numpy as np
 import joblib
 import plotly.express as px
 import shap
+import matplotlib.pyplot as plt
+
 
 # =========================
 # PAGE CONFIG
@@ -193,9 +195,20 @@ if uploaded_file is not None:
     )
 
     st.plotly_chart(fig_shap, use_container_width=True)
-    st.subheader("💡 AI Retention Recommendation")
+    st.subheader("💡 AI Retention Recommendations")
 
-    st.info(df[recommendation])
+    recommendation_df = df[
+        df["Risk Level"].isin(["Very High", "High"])
+    ][
+        [
+            "Churn Prediction",
+            "Churn Probability",
+            "Risk Level",
+            "Recommendation"
+        ]
+    ]
+
+    st.dataframe(recommendation_df)
     # =========================
     # CHARTS
     # =========================
@@ -278,9 +291,15 @@ if uploaded_file is not None:
 
     st.write("### Prediction Breakdown")
 
-    st.pyplot(
-        shap.plots.waterfall(shap_value[0], show=False)
+    
+    fig, ax = plt.subplots()
+
+    shap.plots.waterfall(
+        shap_value[0],
+        show=False
     )
+
+    st.pyplot(fig)
 # =========================
 # FOOTER
 # =========================
