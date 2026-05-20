@@ -74,7 +74,7 @@ This system helps businesses:
 
 ### 🚀 How to Run
 
-<Bash/>
+```bash
 pip install -r requirements.txt
 streamlit run app.py
 
@@ -87,3 +87,4 @@ streamlit run app.py
 - Advanced LLM-based retention suggestions
 - Role-based login dashboard
 - Power BI style executive view
+```
