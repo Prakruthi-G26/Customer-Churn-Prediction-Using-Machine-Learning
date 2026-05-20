@@ -75,7 +75,7 @@ This system helps businesses:
 ### 🚀 How to Run
 
 <Bash/>
-pip install -r requirements.tx
+pip install -r requirements.txt
 streamlit run app.py
 
 ---
