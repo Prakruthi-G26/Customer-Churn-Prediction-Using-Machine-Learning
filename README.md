@@ -1,4 +1,4 @@
-### 📊 AI-Powered Customer Retention & Churn Analytics Platform
+# 📊 AI-Powered Customer Retention & Churn Analytics Platform
 
 An end-to-end Machine Learning application that predicts customer churn, analyzes risk levels, and generates AI-driven retention strategies using an interactive Streamlit dashboard.
 
@@ -9,6 +9,34 @@ An end-to-end Machine Learning application that predicts customer churn, analyze
 This project leverages a trained XGBoost classification model to predict customer churn probability from uploaded datasets. It transforms raw customer data into actionable business insights through real-time predictions, risk segmentation, and explainable AI.
 
 The dashboard is designed for business teams to understand who will churn, why they will churn, and how to retain them effectively.
+
+---
+
+### 📸 Screenshots
+
+### Dashboard preview ⬇️
+
+## ![Dashboard](images/Dashboard_preview.png)
+
+### Upload data ⬇️
+
+![Upload_Data](images/Upload_Dataset.png)
+
+### Key Business Metrics ⬇️
+
+![Key_Business_Metrics](images/Key_Business_Metrics.png)
+
+### AI Retention Recommendations ⬇️
+
+![AI_Retention_Recommendations](images/AI_Retention_Recommendations.png)
+
+### Churn Analytics ⬇️
+
+![Churn_Analytics](images/Churn_Analytics.png)
+
+### Customer-Level AI Explanation ⬇️
+
+![Customer-Level_AI_Explanation](images/Customer-Level_AI_Explanation.png)
 
 ---
 
