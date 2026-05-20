@@ -1,4 +1,4 @@
-### 📊 AI-Powered Customer Churn Prediction & Retention Analytics Dashboard
+### 📊 AI-Powered Customer Retention & Churn Analytics Platform
 
 An end-to-end Machine Learning application that predicts customer churn, analyzes risk levels, and generates AI-driven retention strategies using an interactive Streamlit dashboard.
 
@@ -64,12 +64,28 @@ This system helps businesses:
 ### 📁 Project Structure
 
 ```
-├── app.py # Streamlit dashboard
-├── model_churn.pkl # Trained ML model
-├── label_encoders.pkl # Feature encoders
-├── target_encoder.pkl # Target label encoder
-├── Telco-Customer-Churn.csv # Sample dataset
+├── app.py                      # Single customer prediction app
+├── churn.py                    # Batch analytics dashboard
+├── model_churn.pkl             # Trained XGBoost model
+├── label_encoders.pkl          # Saved label encoders
+├── target_encoder.pkl          # Target encoder
+├── Telco-Customer-Churn.csv    # Sample dataset
+├── requirements.txt            # Dependencies
 └── README.md
+```
+
+---
+
+### ⚙️ Machine Learning Pipeline
+
+```
+- Data preprocessing and cleaning
+- Label encoding for categorical features
+- Train-test split with stratification
+- SMOTE oversampling for imbalance handling
+- XGBoost classifier training
+- ROC-AUC based evaluation
+- Model serialization using Joblib
 ```
 
 ---
